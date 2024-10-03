@@ -47,3 +47,18 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 observer.observe(skillsSection);
+
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navbarUl = document.querySelector('#navbar ul');
+
+menuToggle.addEventListener('click', () => {
+    navbarUl.classList.toggle('show');
+});
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('#navbar ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbarUl.classList.remove('show');
+    });
+});
