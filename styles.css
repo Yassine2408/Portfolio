@@ -352,3 +352,39 @@ section h2 {
         left: 0%;
     }
 }
+
+/* Projects Section */
+#projects {
+    padding: 5rem 0;
+    background-color: #222;
+    color: var(--text-color);
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.project-item {
+    margin-bottom: 2rem;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.project-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
